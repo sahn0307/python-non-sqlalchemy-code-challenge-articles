@@ -15,11 +15,13 @@ Article(author_1, magazine_1, "Dating life in NYC")
 Article(author_1, magazine_2, "Carrara Marble is so 2020")
 Article(author_2, magazine_2, "2023 Eccentric Design Trends")
 
-contributing_authors_vogue = magazine_1.contributing_authors()
-if contributing_authors_vogue:
-    print(f"Contributing authors for {magazine_1.name}:")
-    for author in contributing_authors_vogue:
-        print(f"- {author.name}")
+# contributing_authors_vogue = magazine_1.contributing_authors()
+# if contributing_authors_vogue:
+#     print(f"Contributing authors for {magazine_1.name}:")
+#     for author in contributing_authors_vogue:
+#         print(f"- {author.name}")
 
+top_magazine = Magazine.top_publisher()
+print(f"Top Publisher: {top_magazine.name}")
 # don't remove this line, it's for debugging!
-#ipdb.set_trace()
+ipdb.set_trace()
